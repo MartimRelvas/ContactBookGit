@@ -112,6 +112,6 @@ public class ContactBook {
     }
 
     public boolean haveSameNum(){
-return false;
+
     }
 }
