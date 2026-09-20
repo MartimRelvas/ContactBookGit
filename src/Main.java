@@ -172,5 +172,6 @@ public class Main {
             System.out.println(HAVE_SAME_NUM);
         else
             System.out.println(DIFF_PHONE);
+        System.out.println("goon");
     }
 }
