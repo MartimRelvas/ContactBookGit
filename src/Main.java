@@ -162,7 +162,6 @@ public class Main {
         int phone;
         phone = in.nextInt(); in.nextLine();
         if (cBook.hasPhoneNum(phone)){
-            System.out.println(phone);
             System.out.println(cBook.getNameByPhone(phone));
         }
         else System.out.println(DOES_NOT_EXIST);

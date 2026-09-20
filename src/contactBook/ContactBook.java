@@ -112,6 +112,19 @@ public class ContactBook {
     }
 
     public boolean haveSameNum(){
-
+        int size = contacts.length;
+        if (size < 2){
+            return false;
+        }
+        Contact curr = contacts[0];
+        for (int count = 1; count < size; count++) {
+            for (int i = count; i < size; i++) {
+                if (curr.getPhone() == contacts[i].getPhone()) {
+                    return true;
+                }
+            }
+            curr = contacts[count];
+        }
+        return false;
     }
 }
