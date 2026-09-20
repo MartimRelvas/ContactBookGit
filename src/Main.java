@@ -28,7 +28,7 @@ public class Main {
     public static final String COMMAND_ERROR = "Unknown command.";
     public static final String DOES_NOT_EXIST = "Phone number does not exist.";
     public static final String HAVE_SAME_NUM = "There are contacts that share phone numbers.";
-    public static final String DIFF_PHONE = "All contacts have different phone numbers";
+    public static final String DIFF_PHONE = "All contacts have different phone numbers.";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -63,6 +63,7 @@ public class Main {
                     break;
                 case CHECK_CONTACTS:
                     checkContacts(cBook);
+                    break;
                 default:
                     System.out.println(COMMAND_ERROR);
             }
@@ -172,6 +173,5 @@ public class Main {
             System.out.println(HAVE_SAME_NUM);
         else
             System.out.println(DIFF_PHONE);
-        System.out.println("goon");
     }
 }
