@@ -1,7 +1,5 @@
 package contactBook;
 
-import contactBook.Contact;
-
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -111,5 +109,9 @@ public class ContactBook {
             }
         }
         return "";
+    }
+
+    public boolean haveSameNum(){
+
     }
 }
